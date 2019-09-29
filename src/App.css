@@ -1,0 +1,144 @@
+body {
+  background-color: rgb(18, 18, 18);
+  color: rgb(255, 255, 255);
+  font-family: interface, "Helvetica Neue", helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  height: 100%;
+  letter-spacing: 0px;
+  min-height: 500px;
+  overflow-y: scroll;
+  text-align: left;
+  width: 1040px;
+  min-width: 1040px;
+  vertical-align: baseline;
+  line-height: unset;
+  margin: 0px auto;
+  padding: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  list-style: none;
+}
+
+
+
+/* Masonry */
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+ 
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+
+
+
+/* Gif */
+.gif-container {
+  width: 248px;
+  margin-bottom: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.gif-preview {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+
+
+/*Header*/
+.header {
+  display: flex;
+  align-items: center;
+  margin: 12px 0
+}
+.logo {
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.search-container {
+  width: 100%;
+  display: flex
+}
+.search-input {
+  background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-weight: normal;
+    width: 100%;
+    z-index: 2;
+    float: left;
+    position: relative;
+    height: 52px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    padding: 0 17px;
+}
+.search-btn {
+    background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+    border: none;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.search-btn:after {
+  content: url('https://giphy.com/static/img/search-icon.svg')
+}
+
+
+.text-center {
+  text-align: center;
+  margin: 24px 0
+}
+.load-more-btn {
+  background: rgb(97, 87, 255);
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.trending-header {
+  color: #b2b2b2;
+  font-size: 14px;
+  font-weight: 600;
+}
+.total-count {
+  color: #b2b2b2;
+  padding-left: .4em;
+  text-transform: none;
+  font-size: 13px;
+}
+
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 52px);
+}
